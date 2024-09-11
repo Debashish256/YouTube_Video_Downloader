@@ -1,0 +1,53 @@
+2024-09-10 09:37:53,519 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-10 09:37:53,521 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-10 09:37:53,529 - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-10 09:37:54,314 - WARNING -  * Debugger is active!
+2024-09-10 09:37:54,317 - INFO -  * Debugger PIN: 528-654-203
+2024-09-10 09:38:14,325 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-10 09:38:14,325 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-10 09:38:14,334 - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-10 09:38:15,146 - WARNING -  * Debugger is active!
+2024-09-10 09:38:15,148 - INFO -  * Debugger PIN: 528-654-203
+2024-09-10 09:38:42,173 - INFO -  * Detected change in 'D:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\downloader.py', reloading
+2024-09-10 09:38:42,181 - INFO -  * Detected change in 'D:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\downloader.py', reloading
+2024-09-10 09:38:42,389 - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-10 09:38:43,253 - WARNING -  * Debugger is active!
+2024-09-10 09:38:43,255 - INFO -  * Debugger PIN: 528-654-203
+2024-09-10 09:38:53,051 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-10 09:38:53,051 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-10 09:38:53,058 - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-10 09:38:53,996 - WARNING -  * Debugger is active!
+2024-09-10 09:38:53,997 - INFO -  * Debugger PIN: 528-654-203
+2024-09-10 09:39:36,196 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-10 09:39:36,196 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-10 09:39:36,205 - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-10 09:39:37,062 - WARNING -  * Debugger is active!
+2024-09-10 09:39:37,064 - INFO -  * Debugger PIN: 528-654-203
+2024-09-10 09:40:50,229 - INFO - 127.0.0.1 - - [10/Sep/2024 09:40:50] "GET / HTTP/1.1" 200 -
+2024-09-10 09:40:50,328 - INFO - 127.0.0.1 - - [10/Sep/2024 09:40:50] "GET /static/styles.css HTTP/1.1" 200 -
+2024-09-10 09:41:00,378 - INFO - 127.0.0.1 - - [10/Sep/2024 09:41:00] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-09-10 09:43:16,016 - INFO -  * Detected change in 'd:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\app.py', reloading
+2024-09-10 09:43:16,018 - INFO -  * Detected change in 'd:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\app.py', reloading
+2024-09-10 09:43:16,018 - INFO -  * Detected change in 'd:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\app.py', reloading
+2024-09-10 09:43:16,718 - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-10 09:43:17,731 - WARNING -  * Debugger is active!
+2024-09-10 09:43:17,732 - INFO -  * Debugger PIN: 528-654-203
+2024-09-10 09:43:24,521 - INFO -  * Detected change in 'C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\shutil.py', reloading
+2024-09-10 09:43:24,841 - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-10 09:43:25,615 - WARNING -  * Debugger is active!
+2024-09-10 09:43:25,617 - INFO -  * Debugger PIN: 528-654-203
+2024-09-10 09:44:00,217 - INFO - 127.0.0.1 - - [10/Sep/2024 09:44:00] "GET / HTTP/1.1" 200 -
+2024-09-10 09:44:00,280 - INFO - 127.0.0.1 - - [10/Sep/2024 09:44:00] "GET /static/styles.css HTTP/1.1" 200 -
+2024-09-10 09:44:11,866 - INFO - 127.0.0.1 - - [10/Sep/2024 09:44:11] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-09-10 09:44:50,598 - INFO - 127.0.0.1 - - [10/Sep/2024 09:44:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-09-10 09:45:09,295 - INFO - 127.0.0.1 - - [10/Sep/2024 09:45:09] "GET / HTTP/1.1" 200 -
+2024-09-10 09:45:09,348 - INFO - 127.0.0.1 - - [10/Sep/2024 09:45:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-09-10 09:45:18,172 - INFO - 127.0.0.1 - - [10/Sep/2024 09:45:18] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-09-10 09:48:25,394 - INFO -  * Detected change in 'd:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\app.py', reloading
+2024-09-10 09:48:25,404 - INFO -  * Detected change in 'd:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\app.py', reloading
+2024-09-10 09:48:25,404 - INFO -  * Detected change in 'd:\\Academics\\Placements\\Projects\\YouTube_Video_Downloader\\app.py', reloading
+2024-09-10 09:48:26,277 - INFO -  * Restarting with watchdog (windowsapi)
