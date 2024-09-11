@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>YouTube Downloader</title>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Video Downloader</h1>
+        <input type="text" id="video_url" placeholder="Enter YouTube URL">
+        <div id="thumbnail_container"></div>
+        <button id="download_btn">Download Video</button>
+        <div id="download_status">
+            <p>Download Progress: <span id="progress">0%</span></p>
+            <p>Speed: <span id="speed">0 MB/s</span></p>
+            <p>Time Remaining: <span id="eta">N/A</span></p>
+        </div>
+    </div>
+
+    <script>
+        const videoUrlInput = document.getElementById('video_url');
+        const thumbnailContainer = document.getElementById('thumbnail_container');
+        const downloadBtn = document.getElementById('download_btn');
+        const progress = document.getElementById('progress');
+        const speed = document.getElementById('speed');
+        const eta = document.getElementById('eta');
+
+        videoUrlInput.addEventListener('input', async () => {
+            const url = videoUrlInput.value;
+            if (url.includes('youtube.com')) {
+                const response = await fetch('/get_thumbnail', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ url }),
+                });
+                const data = await response.json();
+                const thumbnailUrl = data.thumbnail_url;
+                thumbnailContainer.innerHTML = `<img src="${thumbnailUrl}" alt="Thumbnail">`;
+            }
+        });
+
+        downloadBtn.addEventListener('click', async () => {
+            const url = videoUrlInput.value;
+
+            const response = await fetch('/download_video', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ url }),
+            });
+
+            const evtSource = new EventSource(`/download_video?url=${encodeURIComponent(url)}`);
+            evtSource.onmessage = function(event) {
+                const downloadData = JSON.parse(event.data);
+                progress.innerText = downloadData.percentage;
+                speed.innerText = downloadData.speed;
+                eta.innerText = downloadData.eta;
+
+                if (downloadData.percentage === '100%') {
+                    evtSource.close();
+                }
+            };
+
+            evtSource.onerror = function(err) {
+                console.error("EventSource failed:", err);
+                evtSource.close();
+            };
+        });
+    </script>
+</body>
+</html>
